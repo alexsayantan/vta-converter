@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+nav {
+    padding: 20px;
+    background-color: rgb(215, 250, 246);
+}
+nav h1 {
+    font-family: 'AR One Sans';
+}
+
+.container {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-container {
+    margin-right: 60px;
+}
+
+.container .sub-container:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 600px;
+    height: 300px;
+    background-size: cover;
+    background-image: url('./assets//bg.jpg');
+}
+
+.sub-container:first-child ul {
+    margin-left: 20px;
+}
+
+.container .sub-container:first-child h2, .sub-container:first-child ul {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'AR One Sans';
+}
+
+#videoForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#videoForm > label {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: 'Calibri';
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+#videoForm > input {
+    display:  none;
+}
+
+#output {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#output audio {
+    min-width: 900px;
+}
+
+.loader {
+    display: inline-block;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #575757;
+    position: relative;
+  }
+  .loader::before {
+    content: '';  
+    position: absolute;
+    left: 22px;
+    bottom: 7px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 4px solid #575757;
+    border-bottom-color: #FF3D00;
+    box-sizing: border-box;
+    animation: rotation 0.6s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    background-color: #d5d2d2;
+  }
+  
+@media only screen and (max-width: 900px){
+    .container {
+        margin: 4rem 10px;
+        flex-direction: column;
+    }
+
+    .sub-container {
+        margin-right: 0;
+    }
+
+    .container .sub-container:first-child {
+        min-width: 90%;
+    }
+
+    #output audio {
+        min-width: 90%;
+    }
+}

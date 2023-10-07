@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to Audio Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Video | Audio Converter</h1>
+    </nav>
+    <div class="container">
+        <div class="sub-container">
+            <h2>
+                High Speed Video to Audio Converter
+            </h2>
+            <ul>
+                <li>
+                    GPU: Nvidia GTX 1650 VRAM: 8GB
+                </li>
+                <li>
+                    CPU: Intel i5 9th Gen 5.0 GHz
+                </li>
+            </ul>
+        </div>
+        <div class="sub-container">
+            <form id="videoForm">
+                <label for="videoFile">Choose File</label>
+                <input type="file" name="video" id="videoFile" accept="video/*">
+            </form>
+        </div>
+    </div>
+
+    <div id="output">
+        <span id="loader" class="loader">L &nbsp; ading</span>
+    </div>
+
+    <footer>
+        <p>
+            Made by <strong>Sayantan Saha</strong>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
