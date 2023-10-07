@@ -1,4 +1,4 @@
-const url = 'https://0b62-2405-201-801a-2119-4451-8cba-3d8e-34d8.ngrok-free.app/api/upload-media/'
+const url = 'https://8e24-2405-201-801a-2119-4451-8cba-3d8e-34d8.ngrok-free.app/api/upload-media/'
 
 const output = document.getElementById("output");
 const loader = document.getElementById("loader");
